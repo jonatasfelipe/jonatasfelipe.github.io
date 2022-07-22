@@ -11,15 +11,17 @@ body {
 }
 
 a:link {
+    color: #d6dbdf;
     text-decoration: none;
 }
 
 a:hover {
+    color: #d6dbdf;
     text-decoration: underline;
 }
 
 a:visited {
-    color: blue;
+    color: #d6dbdf;
 }
 
 .resume-contents {
@@ -44,18 +46,20 @@ a:visited {
 }
 
 .left-section-contents {
-    padding: 2rem 2rem;
+    padding-top: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 1rem;
 }
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #1b2631;
+    border-bottom: 2px dashed #d6dbdf;
 }
 
 .profile .profile-image {
     width: 100%;
     border-radius: 50%;
-    border: 8px solid #1b2631;
+    border: 8px solid #d6dbdf;
 }
 
 .name {
@@ -98,18 +102,18 @@ a:visited {
 .contact-info ul li,
 .references ul li {
     padding: 0.4rem 0;
-    display: flex;
+    color: #eaeaea;
     align-items: center;
-    color: #d6dbdfaf;
     letter-spacing: 1px;
     font-size: 18px;
+    display: flex;
 }
 
 .contact-info ul li i,
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: #2e86c1;
+    color: #eaeaea;
 }
 
 .skills ul {
@@ -267,13 +271,12 @@ a:visited {
 
     .contact-info ul li,
     .references ul li {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .contact-info ul li i,
     .references ul li i {
-        /* padding-right: 1rem; */
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .skills ul li p {
