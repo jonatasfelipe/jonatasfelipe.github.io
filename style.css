@@ -92,7 +92,6 @@ a:visited {
     display: flex;
     align-items: center;
     padding-top: 3rem;
-    padding-left: 3rem;
 }
 
 .contact-info ul {
@@ -102,18 +101,18 @@ a:visited {
 .contact-info ul li,
 .references ul li {
     padding: 0.4rem 0;
-    color: #eaeaea;
+    display: flex;
     align-items: center;
+    color: #d6dbdfaf;
     letter-spacing: 1px;
     font-size: 18px;
-    display: flex;
 }
 
 .contact-info ul li i,
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: #eaeaea;
+    color: #2e86c1;
 }
 
 .skills ul {
