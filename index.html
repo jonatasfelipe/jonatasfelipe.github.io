@@ -22,8 +22,17 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/carousel.css" />
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/machineWrite.css" />
+
+        <!-- Menu JS -->
+        <script src="js/menu.js"></script>
 
         <title>Jônatas Gonçalves</title>
     </head>
@@ -31,6 +40,17 @@
         <main class="resume-contents">
             <section class="left-section">
                 <section class="left-section-contents">
+
+                    <div class="topnav" id="navbarTopo">
+                        <a href="/" class="active" id="home" onclick="selectMenu('home')">Home</a>
+                    <a href="#myProjects" class="disable" id="projects" onclick="selectMenu('projects')">Projects</a>
+                    <a href="#aboutMe" class="disable" id="about" onclick="selectMenu('about')">About</a>
+                    <a href="#myExperience" class="disable" id="experience" onclick="selectMenu('experience')">Experience</a>
+                        <a href="javascript:void(0);" class="icon" onclick="exibeMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+
                     <div class="profile">
                         <img
                             class="profile-image"
@@ -93,9 +113,64 @@
                 </section>
             </section>
             <section class="right-section">
+                <div class="carousel">
+                    <div class="right-title write" id="myProjects">some of my projects</div>
+                    <a name="projects"></a>
+                    <ul class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="img/1.jpg" />
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-3" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-2" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="img/2.jpg" />
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-3" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="img/3.jpg" />
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-2" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-1" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                    </ul>
+                </div>
+
                 <div class="right-section-contents">
                     <section class="about gap">
-                        <div class="right-title">About Me</div>
+                        <div class="right-title write" id="aboutMe">About Me</div>
+                        <a name="about"></a>
                         <p class="about-me-contents">
                             Hi i'm Jônatas Gonçalves.<br />
                             <br />A little about myself! <br />I am graduated in
@@ -106,7 +181,8 @@
                     </section>
                 </div>
                 <section class="experience gap">
-                    <div class="right-title">Experience</div>
+                    <div class="right-title write" id="myExperience">Experience</div>
+                    <a name="experience"></a>
                     <div class="experience-contents">
                         <div class="exp-left">
                             <p class="exp-company-name">Nexus</p>
@@ -129,7 +205,7 @@
                 </section>
 
                 <section class="education gap">
-                    <div class="right-title">Academic Formation</div>
+                    <div class="right-title write" id="myFormation">Academic Formation</div>
                     <div class="education-contents">
                         <div class="education-left">
                             <p class="education-school-name">UNIVESP</p>
@@ -151,7 +227,7 @@
                 </section>
 
                 <section class="awards gap">
-                    <div class="right-title">Courses</div>
+                    <div class="right-title write" id="myCourses">Courses</div>
                     <div class="awards-contents">
                         <div class="awards-left">
                             <p class="awards-company-name">EBAC</p>
@@ -178,5 +254,8 @@
                 </section>
             </section>
         </main>
+        <button id="back-to-top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+        <script src="js/machineWrite.js"></script>
+        <script src="js/backHome.js"></script>
     </body>
 </html>
